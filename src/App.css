@@ -1,0 +1,176 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0E0F0F;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/********NAVBAR************/
+
+
+.header-bg {
+  background-color: #151616;
+}
+
+.search-form {
+  border-radius: 6px;
+  background-color: #e2eeee;
+}
+
+.search-form input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.search-form button {
+  background: none;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.signin, #logo {
+  margin: 0 15px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/************HERO****************/
+
+.hero-carousel .img-gradient{
+  position: relative;
+}
+
+.img-gradient::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 60%,
+    #0E0F0F 95%
+  );
+}
+
+/************SECTIONS****************/
+
+section {
+  padding: 20px 15px;
+  margin: 10px 0;
+  width: 100%;
+  background: linear-gradient(
+    #1c1d1d,
+    #0E0F0F
+  )
+}
+
+section .title{
+  color: yellow;
+}
+
+section .title::before {
+  content: '';
+  border: solid;
+  border-radius: 5px;
+  width: 5px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: yellow;
+}
+
+/*********CARD CAROUSEL************/
+
+.control-buttons button{
+  height: 70px;
+  width: 50px;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.control-buttons button:hover {
+  color: yellow;
+}
+
+.card-item {
+  border: none;
+  border-radius: 0;
+  background-color: rgb(37, 37, 37);
+  padding-bottom: 10px;
+}
+
+.card-item .subtitle {
+  color: rgb(187, 187, 187);
+}
+
+.card-item button {
+  font-weight: bold;
+  width: 90%;
+  margin: 5px auto;
+  background: none;
+  border-color: darkgray;
+}
+
+.card-text {
+  height: 50px;
+  margin: 5px 0;
+}
+
+/*********MOVIE DETAILS************/
+
+.movie .subtext {
+  opacity: 0.7;
+}
+
+.movie {
+  color: rgb(228, 228, 228);
+  padding-bottom: 50px;
+  background: rgb(37, 37, 37);
+}
+
+
+/*******search suggestions********/
+
+.movie-suggestions {
+  background-color: rgb(44, 44, 44);
+  z-index: 100;
+  width: 100%;
+}
+
+.movie-suggestions ul li{
+  list-style: none;
+}
+
+.movie-suggestion {
+  background-color: rgb(65, 65, 65);
+  margin-top: 10px;
+  width: 100%;
+  
+}
+
+.movie-suggestion h5 {
+  font-weight: bold;
+}
